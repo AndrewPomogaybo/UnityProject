@@ -327,7 +327,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100
+  m_Text: 20
 --- !u!222 &358758033
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -651,6 +651,7 @@ GameObject:
   - component: {fileID: 670814509}
   - component: {fileID: 670814511}
   - component: {fileID: 670814510}
+  - component: {fileID: 670814513}
   - component: {fileID: 670814512}
   m_Layer: 0
   m_Name: GameObject
@@ -739,6 +740,21 @@ MonoBehaviour:
   spawnTimeInput: {fileID: 1906409278}
   cubePrefab: {fileID: 6090176563617923566, guid: 3a8e237521fbc2d42a06155c11b6df75, type: 3}
   spawnPoint: {fileID: 1599599412}
+--- !u!114 &670814513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670814508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af449016eb703e94f82c399fcfee7587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  distance: 0
+  currentDistance: 0
 --- !u!1 &688048794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,7 +1975,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 100
+  m_Text: 20
   m_CaretBlinkRate: 0.85
   m_CaretWidth: 1
   m_ReadOnly: 0

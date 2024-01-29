@@ -4,7 +4,6 @@ using System.Collections;
 
 public class CubeSpawner : MonoBehaviour
 {
-
     public InputField speedInput;
     public InputField distanceInput;
     public InputField spawnTimeInput;
@@ -21,7 +20,7 @@ public class CubeSpawner : MonoBehaviour
         speed = int.Parse(speedInput.text);
         distance = int.Parse(distanceInput.text);
         spawnTime = float.Parse(spawnTimeInput.text);
-
+        StartCoroutine(SpawnAndMoveCubes());
     }
 
     private void FixedUpdate()
@@ -31,7 +30,7 @@ public class CubeSpawner : MonoBehaviour
         speed = int.Parse(speedInput.text);
         distance = int.Parse(distanceInput.text);
         spawnTime = float.Parse(spawnTimeInput.text);
-        StartCoroutine(SpawnAndMoveCubes());
+        
     }
 
     private void MoveCubes()
